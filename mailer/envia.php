@@ -17,7 +17,8 @@
   .'Celular: ' .$telefone_cliente .'<BR>'
   .'Empresa: ' .$empresa_cliente .'<BR>'
   .'Como nos achou: ' .$comoNosAchou_cliente .'<BR>'
-  .'Motivação do Contato: ' .$motivacaoContato_cliente;
+  .'Motivação do Contato: ' .$motivacaoContato_cliente .'<BR>'
+  .'Data: ' .$data;
 
   $mensagem = '' .$texto_mensagem. '';
   $mail = new PHPMailer;
