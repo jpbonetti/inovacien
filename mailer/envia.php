@@ -29,6 +29,7 @@
   $mensagem = '' .$texto_mensagem. '';
   $mail = new PHPMailer;
   $mail->isSMTP();
+  $mail->SMTPDebug = 0;
   $mail->Host = 'smtp.umbler.com;smtp.umbler.com'; /* não pergunte... funciona assim :O */
   $mail->SMTPAuth = true;
   $mail->Username = 'contato@inovacien.com.br';
@@ -48,6 +49,6 @@
       echo 'Mensagem não enviada :(';
       echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
   } else {
-      echo 'Mensagem enviada ;)';
+      echo "<script language='javascript' type='text/javascript'>location.href='www.inovacien.com.br'</script>";
   } 
 ?>
