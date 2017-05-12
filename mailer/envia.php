@@ -33,7 +33,7 @@
   $mail->Host = 'smtp.umbler.com;smtp.umbler.com'; /* não pergunte... funciona assim :O */
   $mail->SMTPAuth = true;
   $mail->Username = 'contato@inovacien.com.br';
-  $mail->Password = 'contato-Enq-Fd';
+  $mail->Password = 'contato-Enq-Fdp';
   $mail->SMTPSecure = 'tls';
   $mail->Port = 587;
   $mail->CharSet = 'UTF-8';
