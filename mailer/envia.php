@@ -49,5 +49,5 @@
       echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
   } else {
       echo 'Mensagem enviada ;)';
-  }
+  } 
 ?>
