@@ -2,7 +2,7 @@
   require 'PHPMailerAutoload.php';
   date_default_timezone_set('America/Sao_Paulo');
   setlocale (LC_ALL, 'pt_BR');
-  $data = ''. date('d') .' de '. date('F') .' de '. date('Y') .' às '. date('g:ia') .'';
+  $data = ''. date('d') .' de '. date('M') .' de '. date('Y') .' às '. date('H.i') .'';
   $nome_cliente = $_POST['nome'];
   $assunto_cliente = $_POST['assunto'];
   $email_cliente = $_POST['email'];
@@ -48,7 +48,6 @@
       echo 'Mensagem não enviada :(';
       echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
   } else {
-      header("Location: : http://www.inovacien.com.br");
-      //echo 'Mensagem enviada ;)';
+      echo 'Mensagem enviada ;)';
   } 
 ?>
