@@ -49,6 +49,6 @@
       echo 'Mensagem não enviada :(';
       echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
   } else {
-      echo "<script language='javascript' type='text/javascript'>location.href='www.inovacien.com.br'</script>";
+      echo "<script language='javascript' type='text/javascript'>location.href='../contato/index.html'</script>";
   } 
 ?>
