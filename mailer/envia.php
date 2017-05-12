@@ -50,4 +50,5 @@
   } else {
       echo 'Mensagem enviada ;)';
   }
+  exit();
 ?>
