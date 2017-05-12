@@ -48,7 +48,7 @@
       echo 'Mensagem não enviada :(';
       echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
   } else {
-      echo 'Mensagem enviada ;)';
-  }
-  exit();
+      header("Location: : http://www.inovacien.com.br");
+      //echo 'Mensagem enviada ;)';
+  } 
 ?>
