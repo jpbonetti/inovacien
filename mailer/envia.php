@@ -33,7 +33,7 @@
   $mail->Host = 'smtp.umbler.com;smtp.umbler.com'; /* não pergunte... funciona assim :O */
   $mail->SMTPAuth = true;
   $mail->Username = 'contato@inovacien.com.br';
-  $mail->Password = 'contato-Enq-Fdp';
+  $mail->Password = 'contato-Enq-Fd';
   $mail->SMTPSecure = 'tls';
   $mail->Port = 587;
   $mail->CharSet = 'UTF-8';
@@ -46,9 +46,9 @@
   $mail->Body    = $mensagem;
   $mail->AltBody = 'Este é o e-mail sem html, para leitores que não tem suporte.';
   if(!$mail->send()) {
-      echo 'Mensagem não enviada :(';
-      echo 'Oxi, deu este erro guys: ' . $mail->ErrorInfo;
+      echo "<script>console.log( 'Erro: " . $mail->ErrorInfo . "' );</script>";
+      echo "<script language='javascript' type='text/javascript'>location.href='../contato/index-fail.html'</script>";
   } else {
-      echo "<script language='javascript' type='text/javascript'>location.href='../contato/index.html'</script>";
+      echo "<script language='javascript' type='text/javascript'>location.href='../contato/index-sucess.html'</script>";
   } 
 ?>
