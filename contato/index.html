@@ -161,7 +161,7 @@
                 <section id="new-business-form" class="page-hero">
                     <div class="container">
                         <div class="caldera-grid" id="caldera_form_1" data-cf-ver="1.3.4.2" data-cf-form-id="CF56f31884cbc4e">
-                            <form id="contato" action="../mailer/envia.php" method="post">
+                            <form id="formContato" action="../mailer/envia.php" method="post">
                                 <input type="hidden" id="_cf_verify" name="_cf_verify" value="895282a0fd" /><input type="hidden" name="_wp_http_referer" value="/contact/" /><input type="hidden" name="_cf_frm_id" value="CF56f31884cbc4e"><input type="hidden"
                                     name="_cf_frm_ct" value="1"><input type="hidden" name="cfajax" value="CF56f31884cbc4e"><input type="hidden" name="_cf_cr_pst" value="7669">
                                 <div class="hide" style="display:none; overflow:hidden;height:0;width:0;"><label>Company</label><input type="text" name="company" autocomplete="off"></div>
@@ -308,6 +308,13 @@
     <script type='text/javascript' src='http://inovacien.com.br/wp-content/themes/inovacien/assets/js/min/scripts-min.js'></script>
     <script type='text/javascript' src='http://inovacien.com.br/wp-content/themes/inovacien/assets/js/min/jquery.scrolldepth-min.js'></script>
     <script type="text/javascript">
+        $(document).ready(function() {
+            $('#formContato').ajaxForm(function() {
+                swal('Sucesso!', 'Retornaremos seu contato o mais breve possível', 'success');
+                $('#formContato').clearForm();
+            });
+        });
+
         $('li:nth-of-type(2)', '.dropdown-menu').hover(function() {
             $(this).parent().parent().addClass('first-active')
         }, function() {
