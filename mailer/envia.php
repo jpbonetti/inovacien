@@ -40,7 +40,14 @@
   $mail->setLanguage = 'pt_br'  ;
   $mail->setFrom('contato@inovacien.com.br', 'Contato - Inovacien');
   $mail->addAddress('contato@inovacien.com.br', 'Contato - Inovacien');
+
+  //João Co-Founder
   $mail->addAddress('jpbr.webdesigner@gmail.com', 'Contato - Inovacien');
+  $mail->addAddress('jpbonetti@inovacien.com.br', 'Contato - Inovacien');
+
+  //Michael Co-Founder
+  $mail->addAddress('michaelseraphim@live.com', 'Contato - Inovacien');
+  $mail->addAddress('michael.seraphim@inovacien.com.br', 'Contato - Inovacien');
   $mail->isHTML(true);
   $mail->Subject = 'Novo Contato';
   $mail->Body    = $mensagem;
